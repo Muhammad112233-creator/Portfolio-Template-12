@@ -236,5 +236,7 @@ See [LICENSE](./LICENSE).
 </div>
 
 <div align="center">
-⭐ If this template is useful, leave a star! ⭐
+
+**`STREAMING WORLDWIDE • BUILT WITH REACT & GSAP`**
+
 </div>
