@@ -1,0 +1,24 @@
+{
+  "name": "netflix-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A Netflix-style cinematic developer portfolio template built with React, Vite, Tailwind CSS v4, GSAP and Framer Motion.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "framer-motion": "^12.23.12",
+    "gsap": "^3.13.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.13",
+    "@vitejs/plugin-react": "^4.3.4",
+    "tailwindcss": "^4.1.13",
+    "vite": "^5.4.19"
+  }
+}

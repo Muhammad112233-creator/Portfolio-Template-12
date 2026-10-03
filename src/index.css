@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------
+   Base reset / document defaults
+   ------------------------------------------------------------------ */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #fff;
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+/* ------------------------------------------------------------------
+   Drop-bounce entrance utility (kept from the studio design system)
+   ------------------------------------------------------------------ */
+[data-aos='drop-bounce'] {
+  opacity: 0;
+}
+
+[data-aos='drop-bounce'].aos-animate {
+  animation: 1.2s cubic-bezier(0.28, 0.84, 0.42, 1) forwards dropBounce;
+}
+
+@keyframes dropBounce {
+  0% {
+    opacity: 0;
+    transform: translateY(-300px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  65% {
+    opacity: 1;
+    transform: translateY(-40px);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  90% {
+    opacity: 1;
+    transform: translateY(-15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ------------------------------------------------------------------
+   Homepage marquee (used behind the hero content)
+   ------------------------------------------------------------------ */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 35s linear infinite;
+}
+
+/* ------------------------------------------------------------------
+   Scrollbars used by the mobile rails
+   ------------------------------------------------------------------ */
+.hide-scrollbar::-webkit-scrollbar,
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar,
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* ------------------------------------------------------------------
+   Small niceties
+   ------------------------------------------------------------------ */
+::selection {
+  background-color: #e50914;
+  color: #fff;
+}
+
+/* Keep the cinematic cursor alive on touch devices */
+@media (hover: none) {
+  .cursor-none {
+    cursor: auto;
+  }
+}

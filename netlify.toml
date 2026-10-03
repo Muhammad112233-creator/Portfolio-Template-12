@@ -1,0 +1,15 @@
+# Netlify configuration — drag the whole project folder onto
+# https://app.netlify.com/drop and this file is picked up automatically.
+
+[build]
+  command = "npm run build"
+  publish = "site"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# Single-page app: every route falls back to index.html
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
